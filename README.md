@@ -12,7 +12,10 @@
 ## Microsoft Store
 - Windows terminal
 - Ubuntu
+- Install WSL https://aka.ms/wslinstall 
 
+## Startup Items
+- Disable OneDrive
 
 Install Microsoft Office 2007
 
