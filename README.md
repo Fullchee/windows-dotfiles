@@ -5,6 +5,50 @@
 ## To be automated
 ### Dot files
 
+1. Log into
+2. [Install chocolatey](https://chocolatey.org/install)
+3. Run .post-install.sh
+
+## Microsoft Store
+- Windows terminal
+- Ubuntu
+
+
+Install Microsoft Office 2007
+
+## Choco
+```
+choco feature enable -n=allowGlobalConfirmation
+choco install adobereader -y
+choco install authy-desktop -y
+choco install autohotkey -y
+choco install bitwarden -y
+choco install curl -y
+choco install docker-desktop -y
+choco install discord -y
+choco install dropbox -y
+choco install f.lux -y
+choco install firefox -y
+choco install ghostscript.app -y
+choco install git.install -y
+choco install googlechrome -y
+choco install keepass -y
+choco install miniconda3 -y
+choco install nodejs.install -y
+choco install paint.net -y
+choco install postman -y
+choco install qbittorrent -y
+choco install sharex -y
+choco install steam -y
+choco install vlc -y
+choco install vscode -y
+choco install yarn -y
+choco install zoom -y
+```
+
+
+Cmder? 
+(where do I put my aliases?)
 
 ### path (NOTE: add to `Path` the system variable, not just `PATH`, the user variable)
 - there two environment variables with the name `path`
