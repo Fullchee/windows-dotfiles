@@ -42,6 +42,15 @@ choco install wget -y
 choco install yarn -y
 choco install zoom -y
 
+REM Powerline fonts
+Set-ExecutionPolicy Bypass
+git clone https://github.com/powerline/fonts.git --depth=1
+
+set "config=git --git-dir=C:\.cfg --work-tree=C:\ $*"
+doskey config=git --git-dir=C:\.cfg --work-tree=C:\ $*
+SETX -m "config" "git --git-dir=C:\.cfg --work-tree=C:\ $*"
+
+
 REM Printer driver
 wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
 .\MF4700MFDriversV2090W64usEN.exe
