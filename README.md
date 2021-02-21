@@ -42,7 +42,7 @@ choco install wget -y
 choco install yarn -y
 choco install zoom -y
 
-# Printer driver
+REM Printer driver
 wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
 .\MF4700MFDriversV2090W64usEN.exe
 ```
@@ -55,10 +55,15 @@ wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.ex
 - Install Microsoft Office 2007
 - Printer driver
    - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe 
+- Freedom 
+   - wget https://cdn.freedom.to/installers/FreedomSetup.exe
 - Setup ssh key
    - `ssh-keygen`
    - `cat ~/.ssh/id_rsa.pub`
    - https://github.com/settings/keys
+- Shutdown at 11 PM
+   - Task Scheduler
+   - https://www.youtube.com/watch?v=ZsQJdaHB3ZM
 
 ## Startup Items
 
