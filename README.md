@@ -7,19 +7,9 @@
 
 1. Log into
 2. [Install chocolatey](https://chocolatey.org/install)
-3. Run .post-install.sh
+3. Install everything in choco
 
-## Microsoft Store
-- Windows terminal
-- Ubuntu
-- Install WSL https://aka.ms/wslinstall 
-
-## Startup Items
-- Disable OneDrive
-
-Install Microsoft Office 2007
-
-## Choco
+### Choco
 ```
 choco feature enable -n=allowGlobalConfirmation
 choco install adobereader -y
@@ -37,6 +27,7 @@ choco install ghostscript.app -y
 choco install git.install -y
 choco install googlechrome -y
 choco install keepass -y
+choco install microsoft-windows-terminal -y
 choco install miniconda3 -y
 choco install nodejs.install -y
 choco install paint.net -y
@@ -51,8 +42,19 @@ choco install zoom -y
 ```
 
 ## Other programs
-https://todoist.com/downloads/windows?lang=en
 
+- Install WSL https://aka.ms/wslinstall
+- Ubuntu (Microsoft Store)
+- https://todoist.com/downloads/windows?lang=en
+- Install Microsoft Office 2007
+
+## Startup Items
+
+- Disable
+   - OneDrive
+   - Discord
+   - other stuff
+ 
 Cmder? 
 (where do I put my aliases?)
 
