@@ -37,8 +37,13 @@ choco install sharex -y
 choco install steam -y
 choco install vlc -y
 choco install vscode -y
+choco install wget -y
 choco install yarn -y
 choco install zoom -y
+
+# Printer driver
+wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
+.\MF4700MFDriversV2090W64usEN.exe
 ```
 
 ## Other programs
@@ -47,7 +52,8 @@ choco install zoom -y
 - Ubuntu (Microsoft Store)
 - https://todoist.com/downloads/windows?lang=en
 - Install Microsoft Office 2007
-- Printer drivers
+- Printer driver
+   - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe 
 - Setup ssh key
    - `ssh-keygen`
    - `cat ~/.ssh/id_rsa.pub`
