@@ -23,6 +23,7 @@ Install Microsoft Office 2007
 ```
 choco feature enable -n=allowGlobalConfirmation
 choco install adobereader -y
+choco install anki -y
 choco install authy-desktop -y
 choco install autohotkey -y
 choco install bitwarden -y
