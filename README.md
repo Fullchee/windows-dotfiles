@@ -47,6 +47,11 @@ choco install zoom -y
 - Ubuntu (Microsoft Store)
 - https://todoist.com/downloads/windows?lang=en
 - Install Microsoft Office 2007
+- Printer drivers
+- Setup ssh key
+   - `ssh-keygen`
+   - `cat ~/.ssh/id_rsa.pub`
+   - https://github.com/settings/keys
 
 ## Startup Items
 
