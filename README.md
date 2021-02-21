@@ -61,10 +61,12 @@ wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.ex
    - `ssh-keygen`
    - `cat ~/.ssh/id_rsa.pub`
    - https://github.com/settings/keys
+
 - Shutdown at 11 PM
    - Task Scheduler
    - https://www.youtube.com/watch?v=ZsQJdaHB3ZM
-
+- Adjust the performance of Windows -> Optimize
+- Notifications: Disable
 ## Startup Items
 
 - Disable
