@@ -31,6 +31,7 @@ choco install microsoft-windows-terminal -y
 choco install miniconda3 -y
 choco install nodejs.install -y
 choco install paint.net -y
+choco install pomodoneapp -y
 choco install postman -y
 choco install qbittorrent -y
 choco install sharex -y
