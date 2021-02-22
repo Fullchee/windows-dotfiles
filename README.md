@@ -16,7 +16,7 @@ git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/
 git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
 git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/master
 
-git branch --set-upstream-to=origin/master master
+config branch --set-upstream-to=origin/master master
 ```
 
 ### Choco
