@@ -1,69 +1,24 @@
-# Manual install
+# Windows dot files
 
-## Installation
+I decided to not develop on Windows because Windows seems a bit laggy compared to mac and Linux.
 
-## To be automated
+## TODOs
 
-### Dot files
+- git config and other dot files
+- find a command to run the script with elevated privileges
+
+## Dot files
 
 1. Log into
 2. [Install chocolatey](https://chocolatey.org/install)
-3. Install everything in choco
+3. Install cmder
+   1. `choco feature enable -n=allowGlobalConfirmation`
+   2. `choco install cmder -y`
+4. Run .post-install.cmd in an elevated terminal
+   1. TODO:
 
-```
-git init --bare C:\.cfg
-git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles no
-git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
-git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
-git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/master
+## Manual steps
 
-config branch --set-upstream-to=origin/master master
-```
-
-### Choco
-
-```
-choco feature enable -n=allowGlobalConfirmation
-choco install adobereader -y
-choco install anki -y
-choco install authy-desktop -y
-choco install bitwarden -y
-choco install curl -y
-choco install discord -y
-choco install dropbox -y
-choco install f.lux -y
-choco install firefox -y
-choco install git.install -y
-choco install googlechrome -y
-choco install keepass -y
-choco install nodejs.install -y
-choco install pomodoneapp -y
-choco install sharex -y
-choco install steam -y
-choco install vlc -y
-choco install vscode -y
-choco install wget -y
-choco install youtube-dl -y
-choco install zoom -y
-
-REM Powerline fonts
-Set-ExecutionPolicy Bypass
-git clone https://github.com/powerline/fonts.git --depth=1
-
-set "config=git --git-dir=C:\.cfg --work-tree=C:\ $*"
-doskey config=git --git-dir=C:\.cfg --work-tree=C:\ $*
-SETX -m "config" "git --git-dir=C:\.cfg --work-tree=C:\ $*"
-
-
-REM Printer driver
-wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
-.\MF4700MFDriversV2090W64usEN.exe
-```
-
-## Other programs
-
-- Install WSL https://aka.ms/wslinstall
-  - Ubuntu (Microsoft Store)
 - https://todoist.com/downloads/windows?lang=en
 - Install Microsoft Office 2007
 - Printer driver
@@ -81,27 +36,15 @@ wget https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.ex
   - https://www.youtube.com/watch?v=ZsQJdaHB3ZM
 - Download steam games
 - Notifications: Disable
+- Install WSL https://aka.ms/wslinstall
+  - Ubuntu (Microsoft Store)
 
-## Startup Items
+### Startup Items
 
 - Disable
   - OneDrive
   - Discord
   - other stuff
-
-Cmder?
-(where do I put my aliases?)
-
-## TODOs
-
-- path to python (miniconda isn't automatically added to the PATH)
-
-- path to an `aliases` folder of batch files (to mimic a UNIX terminal workflow)
-
-- Notepad Replacer
-- assign a program to open all files with an extension: `Control Panel -> Programs -> Default Programs -> Associate a file type or protocol with a program`
-  - avoid accidentally double clicking on batch files (.bat)
-  - forces me to only call batch files using a terminal
 
 ## Windows notes
 
@@ -113,7 +56,7 @@ Cmder?
    3. Drag the shortcut to the taskbar
 2. Folder shortcut in the start menu
 
-### Servies
+### Services
 
 - delete a service: `sc delete <service_name>` (not the service display name)
   - see the services (control panel), double click the service to get the service name
