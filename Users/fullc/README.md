@@ -9,11 +9,22 @@ I decided to not develop on Windows because Windows seems a bit laggy compared t
 
 ## Dot files
 
-1. Log into
+1. Log into https://github.com
 2. [Install chocolatey](https://chocolatey.org/install)
 3. Install cmder
    1. `choco feature enable -n=allowGlobalConfirmation`
    2. `choco install cmder -y`
+
+```
+git init --bare C:\.cfg
+git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles no
+git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
+git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
+git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/main
+
+git --git-dir=C:\.cfg --work-tree=C:\ branch --set-upstream-to=origin/main master
+```
+
 4. Run .post-install.cmd in an elevated terminal
    1. TODO:
 
