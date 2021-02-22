@@ -9,6 +9,14 @@
 2. [Install chocolatey](https://chocolatey.org/install)
 3. Install everything in choco
 
+```
+git init --bare C:\.cfg
+git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles no
+git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
+git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
+git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/master
+```
+
 ### Choco
 ```
 choco feature enable -n=allowGlobalConfirmation
