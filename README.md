@@ -15,6 +15,8 @@ git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles n
 git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
 git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
 git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/master
+
+git branch --set-upstream-to=origin/master master
 ```
 
 ### Choco
