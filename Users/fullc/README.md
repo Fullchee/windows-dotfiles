@@ -14,8 +14,9 @@ I decided to not develop on Windows because Windows seems a bit laggy compared t
 3. Install cmder
    1. `choco feature enable -n=allowGlobalConfirmation`
    2. `choco install cmder -y`
+4. Download the dot files in cmder
 
-```
+```sh
 git init --bare C:\.cfg
 git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles no
 git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
@@ -25,29 +26,33 @@ git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/main
 git --git-dir=C:\.cfg --work-tree=C:\ branch --set-upstream-to=origin/main master
 ```
 
-4. Run .post-install.cmd in an elevated terminal
-   1. TODO:
+5. Run `.post-install.cmd` in an elevated terminal
 
 ## Manual steps
 
-- https://todoist.com/downloads/windows?lang=en
-- Install Microsoft Office 2007
-- Printer driver
-  - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
 - Freedom
   - wget https://cdn.freedom.to/installers/FreedomSetup.exe
-- Setup ssh key
+  - Add device to the list
+- Notifications: Disable
+- Microsoft Office 2007
+- Printer driver
+
+  - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
+
+- ssh key
 
   - `ssh-keygen`
   - `cat ~/.ssh/id_rsa.pub`
   - https://github.com/settings/keys
 
+- Steam games
 - Shutdown at 11 PM
+
   - Task Scheduler
   - https://www.youtube.com/watch?v=ZsQJdaHB3ZM
-- Download steam games
-- Notifications: Disable
-- Install WSL https://aka.ms/wslinstall
+
+- Todoist: https://todoist.com/downloads/windows?lang=en
+- WSL https://aka.ms/wslinstall
   - Ubuntu (Microsoft Store)
 
 ### Startup Items
