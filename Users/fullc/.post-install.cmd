@@ -8,7 +8,6 @@ choco install bitwarden -y
 choco install curl -y
 choco install discord -y
 choco install dropbox -y
-choco install f.lux -y
 choco install firefox -y
 choco install googlechrome -y
 choco install keepass -y
