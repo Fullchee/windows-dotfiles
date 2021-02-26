@@ -33,8 +33,9 @@ git --git-dir=C:\.cfg --work-tree=C:\ branch --set-upstream-to=origin/main maste
 - Freedom
   - wget https://cdn.freedom.to/installers/FreedomSetup.exe
   - Add device to the list
-- Notifications: Disable
 - Microsoft Office 2007
+- Night Light (Windows settings)
+- Notifications: Disable
 - Printer driver
 
   - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
