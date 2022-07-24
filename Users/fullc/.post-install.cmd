@@ -3,6 +3,7 @@
 choco feature enable -n=allowGlobalConfirmation
 choco install adobereader -y
 choco install anki -y
+choco install cmder -y
 choco install discord -y
 choco install pomodoneapp -y
 choco install steam -y
