@@ -10,6 +10,7 @@ choco install pomodoneapp -y
 choco install steam -y
 choco install vlc -y
 choco install vscode -y
+choco install zettlr -y
 choco install zoom -y
 
 REM Powerline fonts
