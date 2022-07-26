@@ -5,11 +5,15 @@ choco install adobereader -y
 choco install anki -y
 choco install cmder -y
 choco install discord -y
+
+REM for youtube-dl
+choco install ffmpeg -y
 choco install git -y
 choco install pomodoneapp -y
 choco install steam -y
 choco install vlc -y
 choco install vscode -y
+choco install youtube-dl -y
 choco install zettlr -y
 choco install zoom -y
 
