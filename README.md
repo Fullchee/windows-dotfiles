@@ -1,5 +1,7 @@
 # windows-dotfiles
 
+## Setup
+
 1. Login to GitHub
 2. Install Chocolatey
 3. Install cmder
@@ -17,6 +19,9 @@ zsh ~/.post-install.sh
 ```
 
 5. Run `post-install.sh`
+
+
+## Manual Steps
 
 - [Firefox: compact mode](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 - download Centered from the Windows store
