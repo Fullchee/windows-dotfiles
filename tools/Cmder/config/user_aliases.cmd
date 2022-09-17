@@ -12,10 +12,11 @@ clear=cls
 history=cat -n "%CMDER_ROOT%\config\.history"
 unalias=alias /d $1
 vi=vim $*
+
 cmderr=cd /d "%CMDER_ROOT%"
 config=git --git-dir=C:\.cfg --work-tree=C:\ $*
 o.=start .
-lazygit=git commit -m "$*" && git pull && git push
-lazyconfig=git --git-dir=C:\.cfg --work-tree=C:\ commit -m "$*" && git --git-dir=C:\.cfg --work-tree=C:\ pull && git --git-dir=C:\.cfg --work-tree=C:\ push
+push=git commit -m "$*" && git pull && git push
+pushconfig=git --git-dir=C:\.cfg --work-tree=C:\ commit -m "$*" && git --git-dir=C:\.cfg --work-tree=C:\ pull && git --git-dir=C:\.cfg --work-tree=C:\ push
 vsc=code
 delete_current_branch=for /f "usebackq tokens=*" %a in (`git rev-parse --abbrev-ref HEAD`) do git checkout master && git branch -D %a && git pull
