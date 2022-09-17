@@ -16,6 +16,7 @@ I decided to not develop on Windows because Windows seems a bit laggy compared t
 4. Clone this repo in cmder
 
 ```sh
+C:\tools\Cmder\vendor\git-for-windows\bin\git config --global init.defaultBranch main
 DOSKEY config=C:\tools\Cmder\vendor\git-for-windows\bin\git --git-dir=C:/.cfg/ --work-tree=C:/ $* &&
 C:\tools\Cmder\vendor\git-for-windows\bin\git init --bare C:/.cfg &&
 config config --local status.showUntrackedFiles no &&
