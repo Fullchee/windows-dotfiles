@@ -1,11 +1,9 @@
 # Windows dot files
 
-I decided to not develop on Windows because Windows seems a bit laggy compared to mac and Linux.
-
 ## TODOs
 
-- git config and other dot files
-- find a command to run the script with elevated privileges
+- agnoster theme and oh my posh?
+- https://gist.github.com/jchandra74/5b0c94385175c7a8d1cb39bc5157365e
 
 ## Dot files
 
