@@ -9,27 +9,27 @@ I decided to not develop on Windows because Windows seems a bit laggy compared t
 
 ## Dot files
 
-1. Log into https://github.com
+1. Log into GitHub
 2. [Install chocolatey](https://chocolatey.org/install)
 3. Install cmder
-   1. `choco feature enable -n=allowGlobalConfirmation`
-   2. `choco install cmder -y`
-4. Download the dot files in cmder
+   * `choco install cmder -y`
+4. Clone this repo in cmder
 
 ```sh
-git init --bare C:\.cfg
-git --git-dir=C:\.cfg --work-tree=C:\ config --local status.showUntrackedFiles no
-git --git-dir=C:\.cfg --work-tree=C:\ remote add origin git@github.com:Fullchee/windows-dotfiles.git
-git --git-dir=C:\.cfg --work-tree=C:\ fetch origin
-git --git-dir=C:\.cfg --work-tree=C:\ reset --hard origin/main
-
-git --git-dir=C:\.cfg --work-tree=C:\ branch --set-upstream-to=origin/main master
+DOSKEY config=C:\tools\Cmder\vendor\git-for-windows\bin\git --git-dir=C:/.cfg/ --work-tree=C:/ $* &&
+C:\tools\Cmder\vendor\git-for-windows\bin\git init --bare C:/.cfg &&
+config config --local status.showUntrackedFiles no &&
+config remote add origin git@github.com:Fullchee/windows-dotfiles.git &&
+config fetch &&
+config reset --hard origin/main &&
+config branch --set-upstream-to=origin/main main
 ```
 
 5. Run `.post-install.cmd` in an elevated terminal
 
 ## Manual steps
 
+- [Firefox: compact mode](https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox)
 - Freedom
   - wget https://cdn.freedom.to/installers/FreedomSetup.exe
   - Add device to the list
@@ -37,7 +37,6 @@ git --git-dir=C:\.cfg --work-tree=C:\ branch --set-upstream-to=origin/main maste
 - Night Light (Windows settings)
 - Notifications: Disable
 - Printer driver
-
   - https://gdlp01.c-wss.com/gds/2/0100004462/04/MF4700MFDriversV2090W64usEN.exe
 
 - ssh key
